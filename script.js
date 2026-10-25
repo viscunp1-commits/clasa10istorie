@@ -4700,7 +4700,7 @@ function buildList(f) {
 
 function home() {
   document.body.classList.remove('open');
-  view.innerHTML = `<section class="home"><img src="${COVER}" alt="Coperta manualului Istoria românilor și universală, clasa a X-a"><h1>Temele la istorie clasa a X-a explicate pe scurt</h1><p>Alege o temă din lista din stânga și citește rezumatul ei. Sunt ${flat.length} teme și 10 unități/capitole.</p><button class="btn" id="go">Începe cu prima temă</button><p class="credit">Created by Pavel Viscun</p></section>`;
+  view.innerHTML = `<section class="home"><img src="${COVER}" alt="Coperta manualului Istoria românilor și universală, clasa a X-a"><h1>Temele la istorie clasa a X-a explicate pe scurt</h1><p>De la Antichitate și până în Evul Mediu: descoperă ${flat.length} de teme organizate în 10 unități. Ai meniul în stânga sus la îndemână pentru a naviga prin ele oricând dorești. </p><button class="btn" id="go">Începe cu prima temă</button><p class="credit">Created by Pavel Viscun</p></section>`;
   $('go').onclick = () => show(0);
   document.querySelectorAll('.t.on').forEach(e => e.classList.remove('on'));
   $('main').scrollTop = 0;
